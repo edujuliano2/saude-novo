@@ -43,15 +43,15 @@ export const Hero: React.FC<HeroProps> = ({
   return (
     <section
       id="cotacao"
-      className="relative overflow-hidden pt-24 sm:pt-28 lg:pt-32 pb-16 sm:pb-20 lg:pb-24 bg-[radial-gradient(circle_at_top_left,_rgba(13,148,136,0.10),_transparent_34%),linear-gradient(180deg,_#F8FAFC_0%,_#FFFFFF_42%,_#F8FAFC_100%)]"
+      className="relative overflow-hidden pt-20 sm:pt-28 lg:pt-32 pb-12 sm:pb-20 lg:pb-24 bg-[radial-gradient(circle_at_top_left,_rgba(13,148,136,0.10),_transparent_34%),linear-gradient(180deg,_#F8FAFC_0%,_#FFFFFF_42%,_#F8FAFC_100%)]"
     >
       <div className="absolute inset-0 bg-grid-dots opacity-60 pointer-events-none"></div>
       <div className="absolute -top-24 right-0 w-80 h-80 bg-trygg-teal/10 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-[28rem] h-[28rem] bg-trygg-navy-100/40 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
-          <div className="order-2 lg:order-1 lg:col-span-7 space-y-8 text-left">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-start">
+          <div className="order-2 lg:order-1 lg:col-span-7 space-y-6 sm:space-y-8 text-left">
             <div className="inline-flex items-center gap-2 rounded-full border border-trygg-teal/15 bg-white/80 px-3 py-1.5 shadow-sm backdrop-blur">
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full rounded-full bg-trygg-teal opacity-75 animate-ping"></span>
@@ -62,16 +62,16 @@ export const Hero: React.FC<HeroProps> = ({
               </span>
             </div>
 
-            <div className="space-y-5">
-              <h1 className="max-w-3xl text-4xl sm:text-5xl lg:text-[62px] font-black leading-[1.02] tracking-tight text-trygg-navy-900">
+            <div className="space-y-4 sm:space-y-5">
+              <h1 className="max-w-3xl text-3xl sm:text-5xl lg:text-[62px] font-black leading-[1.02] tracking-tight text-trygg-navy-900">
                 REDUZA OS CUSTOS DO PLANO DE SAÚDE DA SUA EMPRESA
               </h1>
-              <p className="max-w-2xl text-lg sm:text-xl text-slate-600 leading-relaxed">
+              <p className="max-w-2xl text-base sm:text-xl text-slate-600 leading-relaxed">
                 Compare gratuitamente as principais operadoras do mercado e descubra oportunidades reais de economia para sua empresa.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-2xl">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 sm:gap-3 max-w-2xl">
               {[
                 'Cotação gratuita',
                 'Atendimento especializado',
@@ -79,9 +79,9 @@ export const Hero: React.FC<HeroProps> = ({
                 'Economia potencial no plano atual',
                 'Retorno rápido',
               ].map((item) => (
-                <div key={item} className="flex items-center gap-2 rounded-2xl border border-slate-200/80 bg-white/85 px-4 py-3 shadow-sm backdrop-blur">
-                  <CheckCircle2 className="h-5 w-5 shrink-0 text-trygg-teal" />
-                  <span className="text-sm font-semibold text-slate-700">{item}</span>
+                <div key={item} className="flex items-center gap-2 rounded-2xl border border-slate-200/80 bg-white/85 px-3 py-2.5 shadow-sm backdrop-blur">
+                  <CheckCircle2 className="h-4 w-4 shrink-0 text-trygg-teal sm:h-5 sm:w-5" />
+                  <span className="text-xs font-semibold text-slate-700 sm:text-sm">{item}</span>
                 </div>
               ))}
             </div>
@@ -90,7 +90,7 @@ export const Hero: React.FC<HeroProps> = ({
               <button
                 onClick={onPrimaryCtaClick}
                 id="cta-hero-whatsapp"
-                className="group inline-flex items-center justify-center gap-3 rounded-2xl bg-emerald-500 px-6 py-4 text-white shadow-xl shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-600 hover:-translate-y-0.5 active:scale-95"
+                className="group inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-2xl bg-emerald-500 px-5 py-4 text-white shadow-xl shadow-emerald-500/20 transition-all duration-300 hover:bg-emerald-600 hover:-translate-y-0.5 active:scale-95"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/15">
                   <svg className="h-5 w-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -107,10 +107,10 @@ export const Hero: React.FC<HeroProps> = ({
               </button>
             </div>
 
-            <div className="flex flex-wrap items-center gap-5 border-t border-slate-200/80 pt-5 text-left">
+            <div className="flex flex-wrap items-center gap-4 border-t border-slate-200/80 pt-5 text-left">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="h-4.5 w-4.5 text-trygg-teal" />
-                <span className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">Atendimento consultivo especializado</span>
+                <span className="text-[11px] sm:text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Atendimento consultivo especializado</span>
               </div>
               <div className="flex items-center gap-1.5 rounded-full bg-slate-900/5 px-3 py-1.5">
                 <div className="flex text-amber-400">
@@ -120,28 +120,28 @@ export const Hero: React.FC<HeroProps> = ({
                   <Star className="h-4 w-4 fill-current stroke-none" />
                   <Star className="h-4 w-4 fill-current stroke-none" />
                 </div>
-                <span className="text-xs font-semibold text-slate-500">Atendimento consultivo especializado</span>
+                <span className="text-[11px] sm:text-xs font-semibold text-slate-500">Atendimento consultivo especializado</span>
               </div>
             </div>
           </div>
 
           <div className="order-1 lg:order-2 lg:col-span-5">
-            <div className="rounded-[28px] border border-white/70 bg-white/90 p-5 sm:p-6 shadow-[0_30px_80px_rgba(15,23,42,0.12)] backdrop-blur-xl">
-                  <div className="rounded-[24px] bg-[linear-gradient(180deg,_#0B192C_0%,_#102746_100%)] p-5 sm:p-6 text-white shadow-2xl">
+            <div className="rounded-[24px] border border-white/70 bg-white/90 p-4 sm:p-6 shadow-[0_30px_80px_rgba(15,23,42,0.12)] backdrop-blur-xl">
+                  <div className="rounded-[22px] bg-[linear-gradient(180deg,_#0B192C_0%,_#102746_100%)] p-4 sm:p-6 text-white shadow-2xl">
                     <div className="flex items-center justify-between gap-4">
                       <div>
                         <p className="text-[10px] font-black uppercase tracking-[0.32em] text-trygg-teal">
                           Simulador de cotação
                         </p>
-                        <h2 className="mt-2 text-3xl sm:text-[2.05rem] font-black tracking-tight text-white">
+                        <h2 className="mt-2 text-[1.55rem] sm:text-[2.05rem] font-black leading-tight tracking-tight text-white">
                           Preencha os dados abaixo para receber uma análise personalizada.
                         </h2>
                       </div>
                     </div>
 
-                <div className="mt-6 space-y-4">
+                <div className="mt-5 space-y-3.5">
                   <div className="space-y-2">
-                    <label className="block text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+                    <label className="block text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
                       Sua empresa já possui plano de saúde?
                     </label>
                     <div className="flex flex-wrap gap-2">
@@ -170,7 +170,7 @@ export const Hero: React.FC<HeroProps> = ({
 
                   {quoteForm.hasPlan === 'sim' && (
                     <div className="space-y-2">
-                      <label htmlFor="operator" className="block text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
+                      <label htmlFor="operator" className="block text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-400">
                         Operadora atual
                       </label>
                       <select
@@ -192,11 +192,11 @@ export const Hero: React.FC<HeroProps> = ({
                   )}
 
                   <div className="flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-3 py-3">
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Total de vidas informadas</p>
+                    <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.2em] text-slate-400">Total de vidas informadas</p>
                     <p className="text-lg font-black text-white">{totalAgeLives}</p>
                   </div>
 
-                  <p className="text-[11px] leading-relaxed text-slate-300">
+                  <p className="text-[10px] sm:text-[11px] leading-relaxed text-slate-300">
                     A composição etária fica logo abaixo para completar a cotação.
                   </p>
 
@@ -210,7 +210,7 @@ export const Hero: React.FC<HeroProps> = ({
                           <p className="text-[10px] font-bold uppercase tracking-[0.22em] text-slate-400">
                           Composição etária
                         </p>
-                        <p className="mt-1 text-xs font-semibold text-white sm:text-sm">
+                        <p className="mt-1 text-[11px] font-semibold text-white sm:text-sm">
                           Preencha as faixas etárias
                         </p>
                       </div>
@@ -224,20 +224,20 @@ export const Hero: React.FC<HeroProps> = ({
                             key={band.key}
                             className="flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-white/5 px-3 py-2 transition-colors hover:bg-white/10"
                           >
-                            <span className="block text-xs font-semibold text-slate-200 sm:text-sm">{band.label}</span>
+                            <span className="block text-[11px] font-semibold text-slate-200 sm:text-sm">{band.label}</span>
                             <input
                               type="number"
                               min="0"
                               inputMode="numeric"
                               value={quoteForm.ages[band.key]}
                               onChange={(e) => onAgeChange(band.key, e.target.value)}
-                              className="w-16 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-center text-sm font-black text-white outline-none transition placeholder:text-slate-500 focus:border-trygg-teal focus:bg-white/10"
+                              className="w-14 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-center text-sm font-black text-white outline-none transition placeholder:text-slate-500 focus:border-trygg-teal focus:bg-white/10"
                               placeholder="0"
                             />
                           </label>
                         ))}
                       </div>
-                      <p className="text-[11px] leading-relaxed text-slate-300">
+                      <p className="text-[10px] sm:text-[11px] leading-relaxed text-slate-300">
                         A soma das faixas precisa bater com o total de vidas informado para seguirmos com a cotação.
                       </p>
                     </div>

@@ -38,10 +38,10 @@ export const SocialProof: React.FC = () => {
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between text-left mb-8 sm:mb-10">
           <div className="max-w-3xl space-y-3">
             <p className="text-[11px] font-bold uppercase tracking-[0.24em] text-trygg-teal">Cenários que chegam para cotação</p>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-tight text-trygg-navy-900">
+            <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-trygg-navy-900">
               Empresas que buscam uma decisão clara sobre o plano de saúde
             </h2>
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+            <p className="text-sm sm:text-lg text-slate-600 leading-relaxed">
               A cotação foi pensada para mostrar rapidamente se existe espaço para reduzir custos, revisar a operadora atual ou contratar um novo plano com mais inteligência.
             </p>
           </div>
@@ -59,7 +59,7 @@ export const SocialProof: React.FC = () => {
           {proofCards.map((card) => (
             <div
               key={card.title}
-              className="group rounded-[24px] border border-slate-200/80 bg-white p-5 shadow-[0_14px_40px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-trygg-teal/25 hover:shadow-[0_20px_50px_rgba(13,148,136,0.08)]"
+              className="group rounded-[24px] border border-slate-200/80 bg-white p-4 sm:p-5 shadow-[0_14px_40px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:border-trygg-teal/25 hover:shadow-[0_20px_50px_rgba(13,148,136,0.08)]"
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-trygg-navy-900 text-white shadow-lg shadow-trygg-navy-900/15">
@@ -70,8 +70,8 @@ export const SocialProof: React.FC = () => {
                 </span>
               </div>
 
-              <h3 className="mt-5 text-lg font-bold text-trygg-navy-900">{card.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">{card.text}</p>
+              <h3 className="mt-4 text-base sm:text-lg font-bold text-trygg-navy-900">{card.title}</h3>
+              <p className="mt-2 text-xs sm:text-sm leading-relaxed text-slate-600">{card.text}</p>
             </div>
           ))}
         </div>

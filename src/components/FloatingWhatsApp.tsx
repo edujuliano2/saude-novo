@@ -33,7 +33,7 @@ export const FloatingWhatsApp: React.FC<FloatingWhatsAppProps> = ({
         </svg>
 
         {/* Text */}
-        <span className="max-w-[8rem] sm:max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out font-semibold text-sm whitespace-nowrap">
+        <span className="hidden sm:block max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 ease-in-out font-semibold text-sm whitespace-nowrap">
           Falar no WhatsApp
         </span>
 
