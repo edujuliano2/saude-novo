@@ -203,7 +203,7 @@ export const Hero: React.FC<HeroProps> = ({
                     </summary>
 
                     <div className="mt-3 space-y-2">
-                      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+                      <div className="grid grid-cols-1 gap-2 2xl:grid-cols-2">
                         {AGE_BANDS.map((band) => (
                           <div
                             key={band.key}
@@ -227,7 +227,7 @@ export const Hero: React.FC<HeroProps> = ({
                                 inputMode="numeric"
                                 value={quoteForm.ages[band.key]}
                                 onChange={(e) => onAgeChange(band.key, e.target.value)}
-                                className="w-14 shrink-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-center text-sm font-black text-white outline-none transition placeholder:text-slate-500 focus:border-trygg-teal focus:bg-white/10"
+                                className="w-14 shrink-0 rounded-lg border border-white/10 bg-white/5 px-2 py-1.5 text-center text-sm font-black text-white outline-none transition placeholder:text-slate-500 focus:border-trygg-teal focus:bg-white/10 sm:w-16 2xl:w-14"
                                 placeholder="0"
                               />
                               <button
